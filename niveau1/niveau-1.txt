@@ -1,0 +1,1 @@
+Dans tous les niveaux, et dans tous les modules, je n'ai pas utilisé les accents pour les affichages et les commentaires, pour ne pas risquer de faire des affichages "bizzares" à cause des particularités du langage C, qui se limite seulement aux caractères ASCII.

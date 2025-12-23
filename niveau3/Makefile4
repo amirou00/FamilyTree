@@ -1,0 +1,19 @@
+CC=gcc
+CFLAGS=-std=c11 -Wpedantic -Wall -Wextra -fsanitize=address -g
+LDLIBS=-lm
+RM=rm-f
+OBJ=visuarbreasc.o genea.o identite.o 
+EXE=visuarbreasc
+
+$(EXE):$(OBJ)
+	$(CC) $(CFLAGS) $(OBJ) -o $(EXE) $(LDLIBS)
+
+visuarbreasc.c:visuarbreasc.c genea.h identite.h 
+	$(CC) $(CFLAGS) -c visuarbreasc.c
+genea.o:genea.c genea.h
+	$(CC) $(CFLAGS) -c genea.c
+identite.o:identite.c identite.h
+	$(CC) $(CFLAGS) -c identite.c
+
+clean:
+	$(RM) $(OBJ) $(EXE)

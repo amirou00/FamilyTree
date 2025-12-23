@@ -1,0 +1,17 @@
+CC=gcc
+CFLAGS=-std=c11 -Wpedantic -Wall -Wextra -fsanitize=address -g
+LDLIBS=-lm
+RM=rm-f
+OBJ=testidentite.o identite.o 
+EXE=testidentite
+
+$(EXE):$(OBJ)
+	$(CC) $(CFLAGS) $(OBJ) -o $(EXE) $(LDLIBS)
+
+testidentite.o:testidentite.c identite.h 
+	$(CC) $(CFLAGS) -c testidentite.c
+identite.o:identite.c identite.h
+	$(CC) $(CFLAGS) -c identite.c
+
+clean:
+	$(RM) $(OBJ) $(EXE)

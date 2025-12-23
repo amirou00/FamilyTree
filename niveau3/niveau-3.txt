@@ -1,0 +1,4 @@
+Pour ce niveau, j'ai écrit deux fonctions statics récursives qui vont "aider" les deux fonctions à écrites à la fin du module genea à bien fonctionner.
+
+J'ai réussi à produire des fichier de format .png pour l'arbre généalogique et l'arbre généalogique ascendant, mais je ne peut pas créer des .pdf, car je n'ai pas la licence Microsoft et donc je ne peut pas travailler avec ce genre de fichier.
+De plus, les images produites dans les fichiers .png sont les mêmes que dans la consignes, mais malheureusement elles sont plus petites que ce que j'attendais. Tout mes excuses.
